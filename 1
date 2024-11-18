@@ -5,7 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 1ynnjichang, server: 104.17.73.123, port: 8080, type: vless, uuid: 52dda2b6-5cb9-4c60-bb7e-6aec0a0405e7, network: ws, udp: false, sni: 1ynnjichang.lynn5tay0297.workers.dev, tls:true, sni: 1ynnjichang.lynn5tay0297.workers.dev, client-fingerprint: chrome, path: "/?ed=2048", host: 1ynnjichang.lynn5tay0297.workers.dev,  }
+  - {name: 1ynnjichang, server: 104.17.73.123, port: 8080, type: vless, uuid: 52dda2b6-5cb9-4c60-bb7e-6aec0a0405e7, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 
 proxy-groups:
   - name: 🔰 节点选择
