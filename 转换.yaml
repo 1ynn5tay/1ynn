@@ -1,10 +1,22 @@
-- name: 1|🇭🇰1 |  6.1MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: hkre1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: hkre1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- fast-open: true
+proxies:
+  - name: "1|🇭🇰1 | 6.1MB/s"
+    type: http
+    server: hkre1-cdn-route.couldflare-cdn.com
+    port: 443
+    username: "mrwdfNTD8M79LCukCieldrqZWqs="
+    password: "exaxgqkKkd0TAMrCxeonWg=="
+    tls: true
+    sni: hkre1-cdn-route.couldflare-cdn.com
+    skip-cert-verify: false
+    fast-open: true
+
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - "1|🇭🇰1 | 6.1MB/s"
+      - DIRECT
+
+rules:
+  - GEOIP,CN,DIRECT
+  - MATCH,🚀 节点选择
