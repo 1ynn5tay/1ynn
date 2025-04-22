@@ -1,14 +1,5 @@
 proxies:
-  - name: "1|🇭🇰1 | 6.1MB/s"
-    type: http
-    server: hkre1-cdn-route.couldflare-cdn.com
-    port: 443
-    username: "mrwdfNTD8M79LCukCieldrqZWqs="
-    password: "exaxgqkKkd0TAMrCxeonWg=="
-    tls: true
-    sni: hkre1-cdn-route.couldflare-cdn.com
-    skip-cert-verify: false
-    fast-open: true
+- {name: 1|🇭🇰1 | 6.1MB/s, server: hkre1-cdn-route.couldflare-cdn.com, port: 443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: false}
 
 proxy-groups:
   - name: 🚀 节点选择
